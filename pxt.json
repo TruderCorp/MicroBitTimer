@@ -1,5 +1,5 @@
 {
-    "name": "hi",
+    "name": "MicroBitTimer",
     "description": "",
     "dependencies": {
         "core": "*",

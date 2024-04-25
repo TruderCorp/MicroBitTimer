@@ -9,6 +9,8 @@ input.onButtonPressed(Button.AB, function () {
         // 1 minute = 60,000 milliseconds
         basic.pause(60000)
         minutes += -1
+        basic.showNumber(minutes)
+        basic.clearScreen()
     }
     while (1 == 1) {
         music.setVolume(255)
@@ -24,4 +26,5 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showNumber(minutes)
+    basic.clearScreen()
 })
