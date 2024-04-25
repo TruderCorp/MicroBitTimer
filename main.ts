@@ -1,5 +1,4 @@
 let minutes = 0
-let TurnOff = false
 input.onButtonPressed(Button.A, function () {
     minutes += 5
     basic.showNumber(minutes)
@@ -24,8 +23,5 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
-    TurnOff = true
-})
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showNumber(minutes)
 })
